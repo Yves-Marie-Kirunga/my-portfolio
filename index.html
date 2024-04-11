@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scaler=1.0">
+        <title>Personal Portfolio Website -Yves Marie</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/4242907bd3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <h1><span>Y</span>ves <span>M</span>arie</h1>
+                    <!-- <img src="images/logo.png" alt="logo"> -->
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <br><br><P> Data Scientist & ML Engineer</P>
+                    <h1>Hi, I'm <span>Yves Marie</span><br><span>Ishimwe Kirunga </span>from Rwanda</h1>
+                </div>            
+            </div>
+        </div>
+        <!-- ---------------------------About--------------------------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/me.jpg" alt="Your Image">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Welcome to my digital space! I am a passionate and results-driven data scientist dedicated to extracting actionable insights from complex datasets. With a solid foundation in statistical analysis, machine learning, and data visualization, I thrive on transforming raw information into meaningful narratives. My expertise lies in developing robust predictive models, conducting exploratory data analysis, and leveraging advanced algorithms to solve intricate problems.</p>
+                        <br><p>Prior to my life as a data scientist, I earned a master's degree in Electrical and Computer Engineering with a concentration in data science and applied machine learning.</p>
+                        <div class="tab-titles">
+                            <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                            <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                            <div class="tab-links" onclick="opentab('education')">Education</div>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming </span><br>Python, R, Linux</li>
+                                <li><span>Data Pre-processing </span><br>Pandas, NumPy, SQL</li>
+                                <li><span>Data Visualization </span><br>Plotly, Matplotlib, Seaborn</li>
+                                <li><span>Machine Learning </span><br>Scikit-Learn</li>
+                                <li><span>Deep Learning </span><br>TensorFlow</li>
+                                <li><span>Web Development </span><br>HTML, CSS, and Flask</li>
+                                <li><span>Model Deployment </span><br>Streamlit, Ocean, and AWS</li>
+                                <li><span>Additional Skills </span><br>Excel, MATLAB, IBM SPSS, and GitHub</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>January 2024 - Current</span><br>Data Scientist at RBC/RDIS<br>Full-time</li>
+                                <li><span>May 2023 - May 2024</span><br>Data Science Trainee at ALX<br>Part-time</li>
+                                <li><span>May 2023 - August 2023 </span><br>Data Analyst Intern at Kreativstorm<br>Remote</li>
+                                <li><span>May 2023 - September 2023</span><br>Student admin Support at Carnegie Mellon University<br>Full-time</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>July 2022 - December 2023</span><br>Master of Science in Electrical and Computer Engineering<br>Specialization: Data Science and Applied machine Learning<br>Carnegie Mellon University Africa</li>
+                                <li><span>October 2017 - February 2022</span><br>Bachelor of Science in Electrical Power Engineering<br>Specialization: Energy Systems<br>University of Rwanda | College of Science and Technology</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -----------------------------------Services------------------------------------ -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-titles">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <h2>Statistical Modeling</h2>
+                        <p>Building statistical models to identify correlations, make predictions, and uncover insights from data</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-brain"></i>
+                        <h2>Machine Learning</h2>
+                        <p>Developing machine learning models for tasks such as classification, regression, clustering, and recommendation</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-road"></i>
+                        <h2>Data Strategy and Planning</h2>
+                        <p>Developing data-driven strategies and roadmaps to align with organizational goal</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Consulting and Training</h2>
+                        <p>Providing guidance to organizations on data science best practices, strategies, and training teams in data science techniques</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- ---------------------------------------------Portfolio-------------------------------------------------------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/AIF.png">
+                        <div class="layer">
+                            <h3><br>Solar Irradiance Analysis </h3>
+                            <!-- <p>This project pertained to Africa Improved Food, an industry. Its objective was to assess the solar irradiance reaching their location to ascertain its suitability for constructing a solar power facility capable of supplying energy to the industry</p> -->
+                            <a href="https://github.com/Yves-Ishimwe/Data-Analytics-Projects/tree/main/Projects/Solar%20Radiation%20Analysis"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/data-card.gif">
+                        <div class="layer">
+                            <h3><br>Classification of Multi-label 12 Lead Electrocardiogram readings using deep neural network </h3>
+                            <!-- <p>This project focuses on multi-class classification of ECG readings, utilizing machine learning and deep learning techniques to categorize signals into various heart disorders.</p> -->
+                            <a href="https://github.com/Yves-Ishimwe/Deep-Learning/tree/main/Classification%20of%20Multi-label%2012%20Lead%20Electrocardiogram%20readings%20using%20deep%20neural%20network"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/credit-card.jpeg">
+                        <div class="layer">
+                            <h3><br>Credit card customer Customer Segmentation and Classification using Machine Learning algorithm</h3>
+                            <!-- <p>This project aims at classifying customers according to their credit card information, providing a valuable tool for financial institutions, including banks, for customer segmentation</p> -->
+                            <a href="https://github.com/Yves-Ishimwe/Data-Analytics-Projects/tree/main/Projects/Credit%20card%20customer%20segmentation%20and%20classification"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/MPI_Rwanda.png">
+                        <div class="layer">
+                            <h3><br>Mapping Progress: A Machine Learning Approach to Predict Multidimensional Poverty Index in Rwandan Sectors</h3>
+                            <!-- <p>The objective of this project is to develop a machine learning model that can predict the survival outcomes of passengers on the Titanic based on various features.</p> -->
+                            <a href="https://github.com/Yves-Ishimwe/Data-Analytics-Projects/tree/main/Projects/Mapping%20Progress"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    <div class="work">
+                        <img src="images/kaggle-titanic-challenge.jpg">
+                        <div class="layer">
+                            <h3><br>Titanic - Machine Learning from Disaster </h3>
+                            <!-- <p>The objective of this project is to develop a machine learning model that can predict the survival outcomes of passengers on the Titanic based on various features.</p> -->
+                            <a href="https://github.com/Yves-Ishimwe/Data-Analytics-Projects/tree/main/Projects/Titanic%20Kaggle"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a href="#" class="btn">See more</a> -->
+            </div>
+        </div>
+<!-- ---------------------------------------------------------Contact----------------------------------------------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> ishimwe1yves@yahoo.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+250780375923</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100088887019419"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/yvez_marie/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/yves1marie/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Yves-Ishimwe"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="images/Resume1.pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right"></div>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="wmail" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+        
+            function opentab(tabname) {
+                for (var tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (var tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                //document.querySelector("#" + tabname).classList.add("active-tab");
+                // Assuming you want to highlight the clicked tab link as active
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>    
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right ="0";
+            }
+
+            function closemenu(){
+                sidemenu.style.right ="-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = '<SCRIPT https://script.google.com/macros/s/AKfycbxcB45SzhZfsECq0Q-Fmpn8Xhpb1QJOHQThIH75S6ciUllDKjx2YYW13rUjc-MxsRxR/exec>'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response =>{
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
